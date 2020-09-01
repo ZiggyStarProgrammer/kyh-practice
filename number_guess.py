@@ -1,7 +1,7 @@
 import random
 
 n = random.randint(1, 20)
-print("Im thinking of a nu")
+print("Im thinking of a number between 1 and 20. Guess which?")
 
 while True:
     text = input("Your guess")
