@@ -18,11 +18,17 @@ def mainloop(max_guesses, n):
 
         if as_number < n:
             print("Fel nummer, mitt nummer är högre... Försök igen! ")
-            print("Du har " + str(max_guesses))
+            print("Du har gjort " + str(max_guesses) + "gissningar")
 
         if as_number > n:
             print("Fel nummer, mitt nummer är lägre... Försök igen! ")
-            print("Du har " + str(max_guesses))
+            print("Du har gjort " + str(max_guesses) + " gissningar")
 
 
-mainloop(max_guesses, n)
+def ask_number():
+    text = input()
+    tal = int(text)
+    mainloop(max_guesses, n)
+
+
+ask_number()
