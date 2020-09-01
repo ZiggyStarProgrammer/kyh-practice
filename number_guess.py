@@ -1,19 +1,24 @@
 import random
 
-n = random.randint(1, 20)
-print("Im thinking of a number between 1 and 20. Guess which?")
+max_guesses = 3
 
-while True:
-    text = input("Your guess")
+n = random.randint(1, 100)
+print("Jag tänker på ett tal mellan 1 och 100, vilket tal tänker jag på?")
+
+for guesses in range(max_guesses):
+    text = input("Din gissar: ")
     as_number = int(text)
 
     if as_number == n:
-        print("Correct!")
+        print("Korrekt! Det tog dig")
         break
 
     if as_number < n:
-        print("Wrong, my number is higher... Try again")
+            print("Fel nummer, mitt nummer är högre... Försök igen! ")
 
     if as_number > n:
-        print("Wrong, my number is lower... Try again!")
+            print("Fel nummer, mitt nummer är lägre... Försök igen! ")
+
+else:
+    raise ValueError("Detta var inte din grej Alla dina " + max_guesses + "är slut.")
 
