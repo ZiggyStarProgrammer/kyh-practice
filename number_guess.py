@@ -1,7 +1,7 @@
 import random
 
 max_guesses = 0
-n = random.randint(1, 5)
+n = random.randint(1, 100)
 print("Jag tänker på ett tal mellan 1 och 100, vilket tal tänker jag på?")
 
 
