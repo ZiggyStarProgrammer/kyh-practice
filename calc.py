@@ -12,14 +12,11 @@ def run():
     b = int(input("B="))
     if answer == "1":
         result = add(a, b)
-        print("Result = ",  result)
     if answer == "2":
         result = subtract(a, b)
-        print("Result = ", result)
     if answer == "3":
         result = multiply(a, b)
-        print("Result = ", result)
     if answer == "4":
         result = divide(a, b)
-        print("Result = ", result)
+    print("Result =", result)
 
