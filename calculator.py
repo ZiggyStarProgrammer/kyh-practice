@@ -1,5 +1,4 @@
-from calculator.calc import run
-from turtle_1 import square
+from calc import run
 
 run()
-square()
+

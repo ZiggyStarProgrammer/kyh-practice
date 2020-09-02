@@ -1,21 +1,4 @@
-def add(a, b):
-    result = a + b
-    return result
-
-
-def subtract(a, b):
-    result = a - b
-    return result
-
-
-def multiply(a, b):
-    result = a * b
-    return result
-
-
-def divide(a, b):
-    result = a / b
-    return result
+from operations import add, subtract, multiply, divide
 
 
 def run():
@@ -29,13 +12,14 @@ def run():
     b = int(input("B="))
     if answer == "1":
         result = add(a, b)
-        print("Result = " + str(result))
+        print("Result = ",  result)
     if answer == "2":
         result = subtract(a, b)
-        print("Result = " + str(result))
+        print("Result = ", result)
     if answer == "3":
         result = multiply(a, b)
-        print("Result = " + str(result))
+        print("Result = ", result)
     if answer == "4":
         result = divide(a, b)
-        print("Result = " + str(result))
+        print("Result = ", result)
+
