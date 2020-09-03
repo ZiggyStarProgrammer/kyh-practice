@@ -1,7 +1,7 @@
 import random
 
 
-def game(number_of_questions):
+def game(number_of_questions, max_value):
     correct_answers = 0
     for i in range(number_of_questions):
         a = random.randint(1, max_value)
@@ -19,6 +19,11 @@ def game(number_of_questions):
 
 
 if __name__ == '__main__':
-    number_of_questions = int(input("Hur många frågor?"))
-    max_value = int(input("Största tal?"))
-    game(number_of_questions)
+    while True:
+        try:
+            number_of_questions = int(input("Hur många frågor?"))
+            max_value = int(input("Största tal?"))
+            game(number_of_questions, max_value)
+            break
+        except ValueError:
+            print("Inte ett heltal, välj ett heltal")
