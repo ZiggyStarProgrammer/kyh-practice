@@ -20,7 +20,6 @@ main()
 
 def vowel_counter(char):
         if char.lower() == 'a' or char.lower() == 'e':
-            print(char)
             return True
 
 
@@ -30,7 +29,7 @@ def main():
     for char in text:
         if vowel_counter(char):
             counter = counter + 1
-            print(counter)
+            print(char, counter)
 
 
 main()

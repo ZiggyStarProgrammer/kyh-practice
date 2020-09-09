@@ -1,8 +1,8 @@
 from pathlib import Path
 
 p = Path('TODO.txt')
-tasks = []
-content = p.read_text()
+content = p.read_text(encoding='utf8')
+tasks = content.splitlines()
 
 
 def options():
@@ -11,36 +11,40 @@ def options():
     print('3. Ta bort')
     print('4. Stäng')
 
-    q = input('Vad vill du göra?')
+    q = input('Vad vill du göra? ')
     if q == '1':
         read()
     if q == '2':
         add()
     if q == '3':
         erase()
+    if q == '4':
+        return
     else:
-        pass
+        options()
 
 
 def read():
-    print(content)
+    nl = '\n'
+    content.splitlines()
+    content.strip()
+    print(nl.join(tasks))
+    return
 
 
 def add():
-    content.splitlines()
-    tasks = [content]
-    while True:
-        task = input("Vad vill du lägga till?")
-        tasks.append(task)
-        p.write_text(tasks)
-        print(content)
-        break
+    task = input("Vad vill du lägga till? ").strip()
+    tasks.append(task)
+    n = '\n'
+    p.write_text(f"{n.join(tasks)}", encoding='utf8')
+    return
+
 
 def erase():
-    data_2 = input('Vad vill du ta bort?')
-    p.write_text(data_2)
+    print(', '.join(tasks))
+    delete = input('Vad vill du ta bort? Välj nummer för aktivitet du vill ta bort')
+    for action in delete:
+        if action == f'{0, len(tasks)}':
 
-# def close():
-print(tasks)
 
 options()
