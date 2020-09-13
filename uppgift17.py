@@ -41,7 +41,7 @@ def add():
 
 def erase():
     print(', '.join(tasks))
-    delete = input('Vad vill du ta bort? Välj nummer för aktiviteten du vill ta bort: ')
+    delete = input('Skriv det som du vill ta bort: ')
     if delete in tasks:
         tasks.remove(delete)
         return
