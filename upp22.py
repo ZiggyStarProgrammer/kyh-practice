@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 
 p = Path('telefonbok.json')
-r = p.read_text()
+r = p.read_text(encoding='utf8')
 numbers = json.loads(r)
 
 
@@ -43,6 +43,11 @@ def main():
             namn = input("Ange personens förnamn: ")
             tfn = input("Ange telefonnummer: ")
             numbers[namn] = tfn
+            joho = json.dumps(numbers)
+            p.write_text(joho, encoding='utf8')
+
+
+
 
         else:
             print("Förstår inte, avbryter programmet.")
