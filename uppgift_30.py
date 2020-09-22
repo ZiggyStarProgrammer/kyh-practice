@@ -26,5 +26,5 @@ print(f"Varannat jämna index: {tal2[1:len(tal2):2]}")
 
 odd = [num for num in numbers.split(",") if int(num) % 2 == 1] # detta är ett exempel på incomprehension
 even = [num for num in numbers.split(",") if int(num) % 2 == 0]
-print(f"Udda tal:", ", ".join(odd[0:len(odd)]))
-print(f"Jämna tal:", ", ".join(even[0:len(even)]))
+print("Udda tal:", ", ".join(odd[0:len(odd)]))
+print("Jämna tal:", ", ".join(even[0:len(even)]))
