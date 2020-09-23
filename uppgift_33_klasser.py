@@ -1,4 +1,4 @@
-# POCO "Plain old data type"
+# POCO "Plain old class object"
 
 # class School:
 #     def __init__(self, name):
