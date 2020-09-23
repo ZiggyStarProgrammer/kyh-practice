@@ -1,3 +1,4 @@
+from pprint import pprint
 import requests
 import sys
 
@@ -12,7 +13,8 @@ class QuizzWebServiceAPI(object):
     def get_all_questions(self):
         r = requests.get(self.url)
         ls = r.json()['questions']
-        return ls
+        promptls = [prompt['prompt'] for prompt in ls]
+        return promptls
 
     def add_question(self, prompt, answer, alternatives):
         data = {
@@ -31,6 +33,7 @@ def main():
                             f"1. Lägg till en fråga: \n"
                             f"2. Avsluta programmet: \n")
         if user_choice == '1':
+            pprint(service.get_all_questions())
             prompt = input("Skriv en fråga: ")
             answer = input(" Vad är rätt svar?: ")
             alternatives = input("Ange några felaktiga svar (separera dom med kommatecken): ").split(",")
