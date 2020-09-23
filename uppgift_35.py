@@ -35,7 +35,7 @@ def main():
         if user_choice == '1':
             pprint(service.get_all_questions())
             prompt = input("Skriv en fråga: ")
-            answer = input(" Vad är rätt svar?: ")
+            answer = input("Vad är rätt svar?: ")
             alternatives = input("Ange några felaktiga svar (separera dom med kommatecken): ").split(",")
             print(service.add_question(prompt, answer, alternatives))
             print("Tack för ditt bidrag!")
