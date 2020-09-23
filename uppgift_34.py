@@ -36,6 +36,7 @@ if __name__ == '__main__':
     djur.append(snowleopard)
     html = '<html><table>'
     for d in djur:
+        # denna kan även skrivas som cell_2 = Djur.carnivore_or_vegetarian(d)
         cell_2 = d.carnivore_or_vegetarian()
         html = d.htmll(html)
     html += '</table></html>'
