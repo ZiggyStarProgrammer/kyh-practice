@@ -1,3 +1,12 @@
+def max(a,b,c):
+    if a > b and a > c:
+        return a
+    elif b > a and b > c:
+        return b
+    elif c > a and c > b:
+        return c
+
+
 def sum_all(pop):
     summa = 0
     for element in pop:
@@ -12,6 +21,7 @@ def mul_all(poppa):
     return mul_summa
 
 
+print(max(1,4,2))
 print(sum_all([1, 2]))
 print(mul_all([3, 4]))
 
