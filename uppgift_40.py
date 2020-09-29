@@ -1,3 +1,4 @@
+# vänder på en lista
 def reverse(normal_list):
     listo = normal_list
     otsil = []
@@ -10,7 +11,7 @@ def rev(normal):
     rev = normal[::-1]
     return rev
 
-
+# räknar och skriver ut antal stora bokstäver
 def upper(text):
     counter = 0
     for c in text:
@@ -18,7 +19,7 @@ def upper(text):
             counter += 1
     return counter
 
-
+# räknar och skriver ut vilka bokstäver som är stor bokstav
 def upperC(text):
     chars = []
     counter = 0
@@ -28,12 +29,17 @@ def upperC(text):
             chars.append(c)
     return chars
 
-
-def blank():
+# räknar blanksteg och skriver ut antal
+def blank(text):
     counter = 0
-
+    for c in text:
+        if c == " ":
+            counter += 1
+    return counter
 
 
 print(reverse([1, 2, 3]))
 print(rev("1, 2, 3"))
 print(upper("hej HoPop"))
+print(" ".join(upperC("heJ HoPPo")))
+print(blank("h sdf dsfsdf  sdfsdf sdf s"))
