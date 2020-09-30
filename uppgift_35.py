@@ -6,7 +6,6 @@ ENDPOINT = 'https://mqif4s7obg.execute-api.eu-central-1.amazonaws.com/olofs_lamb
 
 
 class QuizzWebServiceAPI(object):
-
     def __init__(self):
         self.url = ENDPOINT
 

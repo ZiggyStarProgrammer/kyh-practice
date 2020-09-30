@@ -16,6 +16,7 @@ today = datetime.datetime.today()
 #         f"{n}Start datum: {element['startDate']} "
 #         f"{n}Slut datum: {element['endDate']}")
 
+
 def main(startdate, enddate):
     for element in obj:
         coursedate = element['startDate']
@@ -23,6 +24,7 @@ def main(startdate, enddate):
             print(f"Kursnamn: {element['name']} "
                   f"{n}Start datum: {element['startDate']} "
                   f"{n}Slut datum: {element['endDate']}")
+
 
 if __name__ == '__main__':
     year = input("year: ")
