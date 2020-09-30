@@ -11,7 +11,8 @@ def main():
 
 
 def movie_req(name):
-    r = requests.get("http://www.omdbapi.com/", params={"t": name, "apikey": "9f6d550c"})
+    d = {"t": name, "apikey": "9f6d550c"}
+    r = requests.get("http://www.omdbapi.com/", params=d)
     return r.json()
 
 
