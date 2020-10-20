@@ -82,3 +82,40 @@
 #       f"Minsta tal: {x}\n"
 #       f"Mellan: {y} ")
 
+# up = int(input("UP: "))
+# down = int(input("DOWN: "))
+# left = int(input("LEFT: "))
+# right = int(input("RIGHT: "))
+#
+#
+# def funky(up, down, left, right):
+#     updown = up - down
+#     leftright = left - right
+#     return updown, leftright
+#
+#
+# def fixer(updown, leftright):
+#     the_num = 0
+#     if leftright > 1:
+#         the_num = updown - leftright
+#     if leftright < 0:
+#         the_num = updown + leftright
+#     if leftright == 1:
+#         the_num = updown
+#
+#
+#     return the_num
+#
+#
+# print(funky(up, down, left, right))
+#
+# print(fixer(funky(up, down, left, right)[0], funky(up, down, left, right)[1]))
+
+vowel = ["a", "o", "e", "i"]
+bluh = input("text: ")
+for i in bluh:
+    if i in vowel:
+        text = i.capitalize()
+
+for i in bluh:
+    print(text)
