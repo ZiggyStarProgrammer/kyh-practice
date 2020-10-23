@@ -7,3 +7,9 @@ class School:
 skola = School('KYH')
 
 print(skola.name)
+
+def school(text):
+    name = text
+    return name
+
+print(school("Kyh"))
