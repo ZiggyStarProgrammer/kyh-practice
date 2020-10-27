@@ -43,6 +43,10 @@ def age_sorter():
     print(sorted(ls))
 
 
+def age_sorter2(person):
+    return person[2]
+
+
 age_sorter()
 
 
@@ -65,3 +69,13 @@ p3 = Person("Lova", "Andersson", 35)
 Person.print(p1)
 Person.print(p2)
 Person.print(p3)
+
+def hello(name):
+    import random
+    rnd_age = random.randint(1, 150)
+    print(f"Hello {name}! I guess your age is {rnd_age}")
+
+hello("Anna")
+
+import random
+hello2 = lambda namn : print(f"Hello {name}! I guess your age is {random.randint(1, 150)}")
