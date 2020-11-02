@@ -1,5 +1,6 @@
 from uppgift_39 import max, sum_all, mul_all
 
+
 def test_max():
     expected = 8
     got = max(1, 8, 4)
