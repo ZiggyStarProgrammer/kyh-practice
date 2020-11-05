@@ -111,11 +111,35 @@
 #
 # print(fixer(funky(up, down, left, right)[0], funky(up, down, left, right)[1]))
 
-vowel = ["a", "o", "e", "i"]
-bluh = input("text: ")
-for i in bluh:
-    if i in vowel:
-        text = i.capitalize()
+# vowel = ["a", "o", "e", "i"]
+# bluh = input("text: ")
+# for i in bluh:
+#     if i in vowel:
+#         text = i.capitalize()
+#
+# for i in bluh:
+#     print(text)
+#
+# printar tal som går att dela med 7 men inte att gångra med 5.
+# for i in range(2000, 3201):
+#     if i%7 == 0 and i%5 != 0:
+#         print(i,", ", end="")
 
-for i in bluh:
-    print(text)
+# printar (Tal8 {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64})
+# inp = int(input("Tal"))
+# dicti = {}
+# for i in range(1, inp + 1):
+#     dicti[i] = i * i
+#
+# print(dicti)
+
+even = [2, 4, 6, 8, 0]
+for i in range(1000, 3001):
+    ls = list(str(i))
+    for n in ls:
+        print(n)
+        if n in even:
+            print(n)
+
+
+
