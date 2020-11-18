@@ -1,4 +1,5 @@
 import random
+import sys
 
 
 def game(number_of_questions, max_value):
@@ -21,7 +22,8 @@ def game(number_of_questions, max_value):
 if __name__ == '__main__':
     while True:
         try:
-            number_of_questions = int(input("Hur många frågor?"))
+            # number_of_questions = int(input("Hur många frågor?"))
+            number_of_questions = int(sys.argv[1])
             max_value = int(input("Största tal?"))
             game(number_of_questions, max_value)
             break
