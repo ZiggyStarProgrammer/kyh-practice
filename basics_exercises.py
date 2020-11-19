@@ -133,13 +133,16 @@
 #
 # print(dicti)
 
-even = [2, 4, 6, 8, 0]
-for i in range(1000, 3001):
-    ls = list(str(i))
-    for n in ls:
-        print(n)
-        if n in even:
-            print(n)
+# even = [2, 4, 6, 8, 0]
+# for i in range(1000, 3001):
+#     ls = list(str(i))
+#     for n in ls:
+#         print(n)
+#         if n in even:
+#             print(n)
 
+def main():
+    name = input()
+    print("Ditt namn är", name)
 
-
+main()
