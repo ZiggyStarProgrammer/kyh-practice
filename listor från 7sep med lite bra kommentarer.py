@@ -6,7 +6,7 @@ ord_byte = ["Thanos", "Spiderman", "Snickar Hasse", "Batwoman", "lappen", "Batma
             "Ironman",
             "Megaman", "Doomslayer", "Ricardo milos"]
 print(f"{ord_byte[random.randint(0, 12)]} har även vid tidigare tillfällen stöttat {ord_byte[random.randint(0, 12)]} "
-      f"från Dalarna")
+      f"från Dalarna")-
 
 print(f"Bland annat har {ord_byte[random.randint(0, 13)]} gjort en låt åt {ord_byte[random.randint(0, 12)]}. "
       f"Nu är det dags igen.")
