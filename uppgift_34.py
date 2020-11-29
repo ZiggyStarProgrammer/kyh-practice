@@ -12,7 +12,6 @@ class Djur():
         self.wiki_url = wiki_url
 
     def carnivore_or_vegetarian(self):
-        # Samma funktion på en rad
         # return 'Köttätare' if self.carnivore else 'Vegetarian'
         if self.carnivore:
             return "Köttätare"
